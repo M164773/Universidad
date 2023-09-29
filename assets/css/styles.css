@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(purple, black, purple);
+    background-repeat: no-repeat;
+    color: white;
+}
+
+h1, h2{
+    text-align: center;
+    text-shadow: 1px 1px 4px white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1::selection, h2::selection, label::selection{
+    background-color: pink;
+    color: black;
+    text-shadow: 1px 1px 4px black;
+}
+
+form{
+    display: table;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form > label{
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    text-shadow: 1px 1px 3px white;
+}
+
+form > input, form > input:focus, form > input::placeholder{
+    font-size: 15px;
+    width: 300px;
+    margin: 2% auto;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+    color: white;
+    padding: 0 0 0 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form > input[type=submit]{
+    border: 1px solid white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: grey;
+    padding: 5px;
+}
+
+form > input[type=submit]:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.header, .footer{
+    background: radial-gradient(firebrick, crimson, firebrick);
+    overflow: auto;
+}
+
+.cedula::-webkit-outer-spin-button,
+.cedula::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.botones-datos > form label{
+    margin: 2% 0;
+}
+
+.botones-datos > form input[type=submit]{
+    display: table;
+    width: 550px;
+    letter-spacing: 0;
+    font-size: 17px;
+    border: 2px solid white;
+    margin: 7% 0 !important;
+}
+
+.botones-datos > form input[type=number]{
+    display: table;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+
+@media (max-width: 600px) {
+    .botones-datos > form input[type=submit]{
+        width: 370px;
+        font-size: 12px;
+    }
+    form > label{
+        font-size: 14px;
+    }
+    form > input, form > input:focus, form > input::placeholder{
+        font-size: 12px;
+    }
+    form > input[type=submit]{
+        padding: 3px;
+    }
+}
+
+@media (max-width: 400px){
+    form > label{
+        font-size: 11px;
+    }
+    form > input, form > input:focus, form > input::placeholder{
+        width: 200px;
+    }
+    .botones-datos > form input[type=submit]{
+        width: 280px;
+        font-size: 9px;
+    }
+    .botones-datos > form input[type=number]{
+        width: 200px;
+        padding: 2px;
+    }
+}
