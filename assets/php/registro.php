@@ -16,7 +16,7 @@
         $estudiante = [$cedula, $nombre, $nota_matematicas, $nota_fisica, $nota_programacion];
         $_SESSION['estudiantes'][] = $estudiante;
 
-	header("Location: ".$SERVER["REQUEST_URI]);
+	header("Location: ".$SERVER["REQUEST_URI"]);
 	exit();
     }
 
